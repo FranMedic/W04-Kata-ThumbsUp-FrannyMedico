@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+
+import Icon from "./component/icon/Icon.js";
 
 function App() {
+  const iconA = faCoffee;
+  const iconB = faArrowCircleDown;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Icon icon1={iconA} icon2={iconB} />
+    </>
   );
 }
 
